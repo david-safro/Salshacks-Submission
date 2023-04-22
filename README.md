@@ -1,2 +1,2 @@
-# Salshacks-v2
-David SAFROOOOOO
+# Salshacks
+Classroom 2.0
