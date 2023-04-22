@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/index.css"/>
+        <link rel="stylesheet" href="/css/dashboard.css"/>
+        <script defer src="/js/dashboard.js"></script>
+    </head>
+    <body>
+        <%- include('../partials/topbar.ejs') %>
+        <h1 id="title">Welcome, <%= account.username %></h1>
+
+        <div id="classes">
+            <div id="add-class" onclick="showForm()">
+                Click to add class.
+            </div>
+        </div>
+
+        <% if (account.role == 'teacher') {%>
+            <form id="form" action="/create-classroom" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"/>
+                <button type="submit" id="create-class-button">Create Class</button>
+            </form>
+        <% } else {%>
+            <form id="form" action="/join-classroom" method="post">
+                <label for="class-code">Class Code:</label>
+                <input type="text" id="class-code" name="classCode"/>
+                <button type="submit" id="join-class-button">Join Class</button>
+            </form>
+        <% }%>
+    </body>
+</html>

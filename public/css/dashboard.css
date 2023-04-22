@@ -1,0 +1,37 @@
+#title {
+    margin-top: 75px;
+    margin-left: 30px;
+}
+
+#classes {
+    margin-top: 50px;
+    display: flex;
+    width: calc(100% - 300px);
+    margin-left: 35px;
+    height: 100px;
+}
+
+#add-class {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: solid 1px gray;
+    cursor: pointer;
+}
+
+#add-class:hover {
+    border: solid 1px #003e29;;
+}
+
+#create-class-button #join-class-button {
+    width: 75px;
+    height: 25px;
+}
+
+#form {
+    margin-left: 500px;
+    visibility: hidden;
+}

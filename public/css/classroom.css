@@ -1,0 +1,159 @@
+#title {
+    top: 75px;
+    position: absolute;
+}
+
+#flex-container {
+    margin-top: 50px;
+    width: 100%;
+    height: calc(100% - 50px);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#homework-section {
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    flex-direction: column;
+}
+
+.hw-header {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 10px;
+    margin-inline: auto;
+}
+
+.assignment {
+    width: 100%;
+    height: 50px;
+    border-top: solid 1px gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.assignment h1 {
+    font-size: 15px;
+}
+
+.assignment h2 {
+    font-size: 10px;
+}
+
+#left-container {
+    margin-inline: auto;
+    width: 700px;
+}
+
+#banner {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #003e29;
+    border-radius: 15px;
+    display: flex;
+}
+
+#banner-title {
+    font-size: 30;
+    color: #5bb797;
+    font-weight: bold;
+    margin: auto;
+}
+
+#feed {
+    margin-top: 30px;
+    width: 700px;
+    height: calc(100% - 130px);
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#feed-header {
+    width: 100%;
+    height: 50px;
+    border: solid gray;
+    border-width: 0 0 1px 0;
+    display: flex;
+    align-items: center;
+}
+
+#feed > .announcement {
+    border-bottom: solid 1px gray;
+    width: 100%;
+    height: 80px;
+}
+
+#feed > .announcement > h1 {
+    font-size: 12px;
+    margin-top: 7px;
+    margin-left: 12px;
+
+}
+
+#feed > .announcement > h2 {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 12px;
+}
+
+
+#create-class-call {
+    box-shadow: none;
+    border: none;
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    background-color: #003e29;
+    color: #5bb797;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#create-class-call:hover {
+    background-color: #045439;
+}
+
+#members-list {
+    width: 200px;
+    height: 100%;
+    background-color: #003e29;
+    color: white;
+    position: relative;
+}
+
+#members-list > .student {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#members-list > .student:hover {
+    background-color: #045439;
+}
+
+#members-list > .student > .icon {
+    border-radius: 50%;
+    background-color: #5bb797;
+    background-image: url('../img/Default_pfp.svg');
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+#members-list > .student > .name {
+    margin-left: 10px;
+    font-size: 15px;
+}

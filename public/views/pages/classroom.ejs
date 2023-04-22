@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/index.css"/>
+        <link rel="stylesheet" href="/css/classroom.css"/>
+        <script defer src="/js/classroom.js"></script>
+    </head>
+    <body>
+        <%- include('../partials/topbar.ejs') %>
+        <div id="flex-container">
+            <div id="homework-section">
+                <h1 class="hw-header">Assignments</h1>
+                <div class="assignment"><h1>Binary tree inversion</h1><h2>3:00PM</h2></div>
+                <div class="assignment"><h1>Simple SQL server</h1><h2>3:45PM</h2></div>
+                <div class="assignment"><h1>If-Else practice</h1><h2>3:45PM</h2></div>
+            </div>
+            <div id="left-container">
+                <div id="banner">
+                    <h1 id="banner-title"><%= classroom.name %></h1>
+                </div>
+                <div id="feed">
+                    <div id="feed-header">
+                        <% if (role == 'teacher') { %>
+                            <button id="create-class-call" onclick="showPopup()">Create Call</button>
+                        <% } else {%>
+                            <button id="create-class-call" onclick="joinCall()">Join Call</button>
+                        <% }%>
+                    </div>
+                    <div class="announcement">
+                        <h1>Classroom 2.0</h1>
+                        <h2>Welcome to E period Compsci</h2>
+                    </div>
+                    <div class="announcement">
+                        <h1>Classroom 2.0</h1>
+                        <h2>2 new assignments</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="members-list">
+                <% students.forEach((student) => { %>
+                    <div class="student">
+                        <div class="icon"></div>
+                        <label class="name"><%= student.username %></label>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </body>
+</html>
